@@ -2,6 +2,9 @@ import random
 import matplotlib.pyplot as plt
 import simpy
 from statistics import stdev as desvest
+import os
+
+os.makedirs("graficas", exist_ok=True)
 
 env = simpy.Environment()
 RAM = simpy.Container(env, init=100)
